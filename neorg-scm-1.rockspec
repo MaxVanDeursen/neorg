@@ -36,7 +36,7 @@ end
 test_dependencies = {
 	"nlua",
 	-- Placed here as we plan on removing nvim-treesitter as a dependency soon, but it's still required for various tests.
-	"nvim-treesitter == 0.9.3",
+	"nvim-treesitter == 0.9.3-1",
 }
 
 build = {
