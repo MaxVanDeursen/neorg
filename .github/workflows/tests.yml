@@ -12,6 +12,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Install Treesitter
+        uses: actions/checkout@v4
+        with:
+          repository: nvim-treesitter/nvim-treesitter
+          path: nvim-treesitter
       - name: Run tests
         uses: nvim-neorocks/nvim-busted-action@v1
         with:
